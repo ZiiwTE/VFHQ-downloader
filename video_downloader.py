@@ -13,8 +13,7 @@ class VideoDownloader:
             existing_video_path = os.path.join(
                 output_dir, f"vid_{meta_info.video_id}{ext}")
             if os.path.isfile(existing_video_path):
-                logging.info(f'Video for ID {meta_info.video_id} already downloaded at {
-                             existing_video_path}')
+                logging.info(f'Video for ID {meta_info.video_id} already downloaded at {existing_video_path}')
                 return existing_video_path
 
         video_path = os.path.join(output_dir, f"vid_{meta_info.video_id}")
