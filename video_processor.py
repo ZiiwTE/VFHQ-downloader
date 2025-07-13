@@ -20,8 +20,7 @@ class VideoProcessor:
             return
 
         if not video_file:
-            logging.info(f"No video file provided for {
-                         clip_meta.video_id}_{clip_meta.pid}.")
+            logging.info(f"No video file provided for {clip_meta.video_id}_{clip_meta.pid}.")
             return
 
         clip = VideoFileClip(video_file)
