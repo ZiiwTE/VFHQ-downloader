@@ -52,11 +52,9 @@ class VideoDownloader:
             for ext in VIDEO_EXTENSIONS:
                 downloaded_file = video_path + ext
                 if os.path.isfile(downloaded_file):
-                    logging.info(f'Successfully downloaded video for ID {
-                                 meta_info.video_id} to {downloaded_file}')
+                    logging.info(f'Successfully downloaded video for ID {meta_info.video_id} to {downloaded_file}')
                     return downloaded_file
         else:
-            logging.error(f'Failed to download video for ID {
-                          meta_info.video_id}: Process ended with return code {return_code}')
+            logging.error(f'Failed to download video for ID {meta_info.video_id}: Process ended with return code {return_code}')
 
         return None
